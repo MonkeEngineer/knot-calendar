@@ -4,6 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
+A self-hosted calendar and event management server built with Django and PostgreSQL. Named after 结绳记事 (jié shéng jì shì), the ancient practice of tying knots to record events.
+
 ## Setup
 
 When starting work in this repository for the first time, ask the user whether they want to add a `LICENSE` file. If yes, ask which license they prefer (e.g. MIT, Apache-2.0, GPL-3.0) and create the appropriate `LICENSE` file.
