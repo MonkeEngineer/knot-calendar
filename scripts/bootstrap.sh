@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Apply the Ecosystem Admin repository conventions to a GitHub repository:
+# Apply repository conventions to a GitHub repository:
 #   - labels (scripts/labels.json)
 #   - repository settings: squash commit uses the PR title and body,
 #     head branches are deleted after merge
@@ -37,9 +37,13 @@ echo "Syncing labels"
 "$dir/sync-labels.sh" "${prune_args[@]}" "$repo"
 
 echo "Updating repository settings"
+# Merge method defaults: squash-only. Merge commits and rebase merges are
+# disabled but can be re-enabled at any time via repo settings or gh api.
 gh api "repos/$repo" --method PATCH --silent \
   -F delete_branch_on_merge=true \
   -F allow_squash_merge=true \
+  -F allow_merge_commit=false \
+  -F allow_rebase_merge=false \
   -f squash_merge_commit_title=PR_TITLE \
   -f squash_merge_commit_message=PR_BODY
 
