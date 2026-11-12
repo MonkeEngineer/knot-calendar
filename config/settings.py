@@ -86,6 +86,8 @@ MAILERS = {
     },
 }
 
+_LOG_LEVEL = env("LOG_LEVEL", default="INFO").upper()
+
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
@@ -102,14 +104,11 @@ LOGGING = {
         },
     },
     "loggers": {
-        "django.server": {
-            "handlers": ["console"],
-            "level": "INFO",
-            "propagate": False,
-        },
+        "django": {"handlers": [], "level": _LOG_LEVEL, "propagate": True},
+        "django.server": {"handlers": [], "level": _LOG_LEVEL, "propagate": True},
     },
     "root": {
         "handlers": ["console"],
-        "level": env("LOG_LEVEL", default="INFO").upper(),
+        "level": _LOG_LEVEL,
     },
 }
