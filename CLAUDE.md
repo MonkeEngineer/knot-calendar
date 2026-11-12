@@ -44,3 +44,7 @@ Pull requests are squash-merged (the only merge method allowed), so the pull req
 ## Pull request template
 
 Pull requests follow the pull request template, also provided by the organization's default community health files, with these sections in order: Summary, Changes (a `-` list), Related issues (`Closes #N`, plus other links as `- [Label](URL)`) and Additional notes. The pull request body becomes the squash commit body on `main`, so keep it concise and delete empty sections and unfilled placeholders such as a bare `Closes #`.
+
+## Documented Solutions
+
+`docs/solutions/` — documented solutions to past problems (bugs, best practices, workflow patterns), organized by category with YAML frontmatter (`module`, `tags`, `problem_type`). Relevant when implementing or debugging in documented areas.
