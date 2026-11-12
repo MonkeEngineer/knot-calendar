@@ -1,5 +1,9 @@
 # Knot Calendar
 
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](https://www.python.org/downloads/)
+[![Django](https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white)](https://www.djangoproject.com/)
+[![MIT License](https://img.shields.io/badge/MIT%20License-FFFFFF)](LICENSE)
+
 A self-hosted calendar and event management server built with Django and PostgreSQL. Named after 结绳记事 (jié shéng jì shì), the ancient practice of tying knots to record events.
 
 ## Getting Started
