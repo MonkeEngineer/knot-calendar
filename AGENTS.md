@@ -8,6 +8,16 @@ Knot Calendar is a self-hosted calendar where every occurrence of a recurring ev
 
 The project is licensed under AGPLv3: modifications deployed over a network must be released under the same license.
 
+## Branching
+
+This project follows [GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow):
+
+- `main` is always deployable.
+- All changes happen on short-lived feature branches created from `main`.
+- Branch naming: `<type>/<issue-number>-<short-description>` (e.g. `feat/12-recurring-events`).
+- Open a PR to merge back into `main`; PRs require at least one approval.
+- Delete the branch after merge.
+
 ## Commits
 
 Use [Conventional Commits](https://www.conventionalcommits.org/):
