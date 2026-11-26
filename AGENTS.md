@@ -30,6 +30,14 @@ Types: `feat`, `fix`, `chore`, `refactor`, `test`, `docs`, `ci`, `revert`.
 Scope is optional; use it when the change is clearly scoped to one area (e.g. `feat(calendar): ...`).  
 Breaking changes: append `!` after the type/scope and add a `BREAKING CHANGE:` footer.
 
+One logical change per commit — do not bundle unrelated changes together.
+
+Add a body only when the subject line is not enough to explain the why (e.g. a non-obvious constraint, a workaround, a breaking change). Otherwise keep it to the subject line alone.
+
+## Pull requests
+
+One concern per PR, mirroring commit granularity. The PR title follows the same conventional commit format as the commit subject line.
+
 ## Status
 
 The repository is in initial setup. No build tooling, language, or framework has been chosen yet. Update this file once the stack is decided — commands, architecture, and conventions all belong here.
