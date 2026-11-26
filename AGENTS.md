@@ -40,12 +40,11 @@ One concern per PR, mirroring commit granularity. The PR title follows the same 
 
 **Ruleset (enforced on `main`):**
 
-- Direct pushes to `main` are not allowed — all changes go through a PR.
-- The branch must be up to date with `main` before merging.
-- All CI checks must pass before merging.
+- Direct pushes and force pushes to `main` are not allowed — all changes go through a PR.
 - Branches are deleted automatically after merge.
+- Status checks will be required once a CI pipeline is in place.
 
-**Merge method:** squash and merge only. The PR title and body are used as the squash commit message, so keep them accurate. Merge commits and rebase merges are disabled.
+**Merge method:** squash only — merge commits and rebase merges are disabled. The PR title and body are used as the squash commit message, so keep them accurate.
 
 ## Status
 
