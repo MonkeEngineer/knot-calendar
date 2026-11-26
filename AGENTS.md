@@ -8,6 +8,18 @@ Knot Calendar is a self-hosted calendar where every occurrence of a recurring ev
 
 The project is licensed under AGPLv3: modifications deployed over a network must be released under the same license.
 
+## Commits
+
+Use [Conventional Commits](https://www.conventionalcommits.org/):
+
+```text
+<type>(<scope>): <description>
+```
+
+Types: `feat`, `fix`, `chore`, `refactor`, `test`, `docs`, `ci`, `revert`.  
+Scope is optional; use it when the change is clearly scoped to one area (e.g. `feat(calendar): ...`).  
+Breaking changes: append `!` after the type/scope and add a `BREAKING CHANGE:` footer.
+
 ## Status
 
 The repository is in initial setup. No build tooling, language, or framework has been chosen yet. Update this file once the stack is decided — commands, architecture, and conventions all belong here.
