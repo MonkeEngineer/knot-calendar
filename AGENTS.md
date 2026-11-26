@@ -38,6 +38,15 @@ Add a body only when the subject line is not enough to explain the why (e.g. a n
 
 One concern per PR, mirroring commit granularity. The PR title follows the same conventional commit format as the commit subject line.
 
+**Ruleset (enforced on `main`):**
+
+- Direct pushes to `main` are not allowed — all changes go through a PR.
+- The branch must be up to date with `main` before merging.
+- All CI checks must pass before merging.
+- Branches are deleted automatically after merge.
+
+**Merge method:** squash and merge only. The PR title and body are used as the squash commit message, so keep them accurate. Merge commits and rebase merges are disabled.
+
 ## Status
 
 The repository is in initial setup. No build tooling, language, or framework has been chosen yet. Update this file once the stack is decided — commands, architecture, and conventions all belong here.
