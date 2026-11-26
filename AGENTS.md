@@ -45,6 +45,8 @@ One concern per PR, mirroring commit granularity. The PR title follows the same 
 - Branches are deleted automatically after merge.
 - Status checks will be required once a CI pipeline is in place.
 
+**After merging:** pull `main` locally and delete the local branch (`git branch -d <branch>`).
+
 **Merge method:** squash only — merge commits and rebase merges are disabled. The PR title and body are used as the squash commit message, so keep them accurate.
 
 ## Status
