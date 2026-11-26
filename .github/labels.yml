@@ -18,6 +18,10 @@
   color: "bfd4f2"
   description: Adding or fixing tests
 
+- name: chore
+  color: "e8e8e8"
+  description: Build tooling, dependencies, Docker, config, and project setup
+
 - name: good first issue
   color: "7057ff"
   description: Good for newcomers
