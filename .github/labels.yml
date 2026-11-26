@@ -1,0 +1,31 @@
+- name: bug
+  color: "d73a4a"
+  description: Something isn't working
+
+- name: enhancement
+  color: "a2eeef"
+  description: New feature or improvement
+
+- name: refactor
+  color: "e4e669"
+  description: Code change with no behavior difference
+
+- name: documentation
+  color: "0075ca"
+  description: Improvements or additions to documentation
+
+- name: test
+  color: "bfd4f2"
+  description: Adding or fixing tests
+
+- name: chore
+  color: "e8e8e8"
+  description: Build tooling, dependencies, Docker, config, and project setup
+
+- name: good first issue
+  color: "7057ff"
+  description: Good for newcomers
+
+- name: help wanted
+  color: "008672"
+  description: Extra attention or contributions welcome
