@@ -4,7 +4,7 @@ about: Bug report, feature request, refactor, docs, or test
 labels: ''
 ---
 
-<!-- Label this issue: bug · enhancement · refactor · documentation · test · good first issue · help wanted -->
+<!-- Label this issue: bug · enhancement · chore · refactor · documentation · test · good first issue · help wanted -->
 
 ## Summary
 
