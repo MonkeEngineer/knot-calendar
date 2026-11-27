@@ -221,3 +221,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project data directory: keep the directory, ignore its contents
+data/*
+!data/.gitkeep
