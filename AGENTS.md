@@ -26,8 +26,8 @@ Use [Conventional Commits](https://www.conventionalcommits.org/):
 <type>(<scope>): <description>
 ```
 
-Types: `feat`, `fix`, `chore`, `refactor`, `test`, `docs`, `ci`, `revert`.  
-`chore` covers build tooling, dependencies, Docker, config, and project setup. `ci` is specific to CI/CD pipeline changes (GitHub Actions workflows).  
+Types: `feat`, `fix`, `chore`, `refactor`, `style`, `test`, `docs`, `ci`, `revert`.  
+`chore` covers build tooling, dependencies, Docker, config, and project setup. `style` is for formatting-only changes with no behavior change (e.g. a linter's format pass). `ci` is specific to CI/CD pipeline changes (GitHub Actions workflows).  
 Scope is optional; use it when the change is clearly scoped to one area (e.g. `feat(calendar): ...`).  
 Breaking changes: append `!` after the type/scope and add a `BREAKING CHANGE:` footer.
 
