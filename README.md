@@ -54,6 +54,35 @@ A self-hosted calendar where every occurrence of a recurring event keeps its own
    uv run --env-file .env python manage.py runserver
    ```
 
+## Development
+
+Commands that touch the database or settings need `--env-file .env`. Export `UV_ENV_FILE=.env` once in your shell to skip passing it on every command.
+
+### Linting
+
+To lint and format with Ruff, run these commands:
+
+```shell
+uv run ruff check
+uv run ruff format
+```
+
+### Testing
+
+To run the test suite with pytest, run this command:
+
+```shell
+uv run --env-file .env pytest
+```
+
+### Pre-commit
+
+To install the local pre-commit hooks, run this command:
+
+```shell
+uv run pre-commit install
+```
+
 ## License
 
 This project is under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html). You are free to use, modify, and distribute it, but any modified version you deploy over a network must also be made available under the same license.
