@@ -1,5 +1,10 @@
 # Knot Calendar
 
+[![AGPLv3](https://img.shields.io/badge/AGPLv3-FFFFFF)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=fff)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/Django-6.1-%23092E20.svg?logo=django&logoColor=white)](https://www.djangoproject.com/)
+[![Ruff](https://custom-icon-badges.demolab.com/badge/Ruff-261230.svg?logo=ruff-logo)](https://docs.astral.sh/ruff/)
+
 A self-hosted calendar where every occurrence of a recurring event keeps its own checklist and record. Named after 结绳记事 (jié shéng jì shì), the ancient practice of tying knots to record events.
 
 ## License
