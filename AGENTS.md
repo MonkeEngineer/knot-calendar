@@ -49,6 +49,10 @@ One concern per PR, mirroring commit granularity. The PR title follows the same 
 
 **Merge method:** squash only — merge commits and rebase merges are disabled. The PR title and body are used as the squash commit message, so keep them accurate.
 
+## Documented solutions
+
+`docs/solutions/` holds documented solutions to past problems (bugs, best practices, workflow patterns), organized by category with YAML frontmatter (`module`, `tags`, `problem_type`). Relevant when implementing or debugging in documented areas.
+
 ## Status
 
 The repository is in initial setup. No build tooling, language, or framework has been chosen yet. Update this file once the stack is decided — commands, architecture, and conventions all belong here.
