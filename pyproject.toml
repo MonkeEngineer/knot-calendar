@@ -1,0 +1,13 @@
+[project]
+name = "knot-calendar"
+version = "0.1.0"
+description = "A self-hosted calendar where every occurrence of a recurring event keeps its own checklist and record"
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+authors = [
+    { name = "MonkeEngineer", email = "56447949+MonkeEngineer@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django~=6.1.3",
+]
