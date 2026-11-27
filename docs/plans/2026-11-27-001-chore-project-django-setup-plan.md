@@ -290,7 +290,7 @@ flowchart TB
   4. "Development" lists `ruff check`, `ruff format`, `pytest` and `pre-commit install`, in the same uv form as Getting started.
 - **Look up:** shields.io static badges (license, Python, Django) and Ruff's official badge in its README.
 - **Test expectation:** none automated. The fresh-clone walkthrough below is the test.
-- **Verification:** push the branch, clone it into a temporary directory, and follow the README word for word. `runserver` starts, `http://127.0.0.1:8000/admin/login/` returns HTTP 200, and the Development commands all pass. The plan adds no root view, so `/` returns 404 by design. Fix the README wherever it was unclear.
+- **Verification:** push the branch, clone it into a temporary directory, and follow the README word for word. `runserver` starts, `http://127.0.0.1:8000/admin/login/` returns HTTP 200, and the Development commands all pass. The plan adds no root view; with `DJANGO_DEBUG=1` and the unmodified `startproject` URLconf, Django 6.1's own install-success page is served at `/` with HTTP 200 (a framework behavior since Django 5.1, not something this plan builds). Fix the README wherever it was unclear.
 
 ---
 
