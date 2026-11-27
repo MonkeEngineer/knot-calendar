@@ -8,7 +8,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = environ.get("DJANGO_SECRET_KEY")
 if not SECRET_KEY:
     raise ImproperlyConfigured(
-        "`DJANGO_SECRET_KEY` must be set before running the service."
+        "`DJANGO_SECRET_KEY` must be set. Copy .env.example to .env, add a key, "
+        "and run commands with `uv run --env-file .env` (or export UV_ENV_FILE=.env)."
     )
 
 _debug_raw = environ.get("DJANGO_DEBUG", "0")
@@ -16,7 +17,7 @@ if _debug_raw not in ("0", "1"):
     raise ImproperlyConfigured("`DJANGO_DEBUG` must be '0' or '1'.")
 DEBUG = _debug_raw == "1"
 
-_allowed_hosts_raw = environ.get("DJANGO_ALLOWED_HOSTS", "localhost,127.0.0.1")
+_allowed_hosts_raw = environ.get("DJANGO_ALLOWED_HOSTS") or "localhost,127.0.0.1"
 ALLOWED_HOSTS = [host.strip() for host in _allowed_hosts_raw.split(",") if host.strip()]
 
 INSTALLED_APPS = [
@@ -60,7 +61,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / environ.get("DATABASE_NAME", "data/db.sqlite3"),
+        "NAME": BASE_DIR / (environ.get("DATABASE_NAME") or "data/db.sqlite3"),
     }
 }
 
