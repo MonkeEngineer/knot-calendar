@@ -79,6 +79,8 @@ The repository has only documentation and GitHub metadata, with no code and no c
 - Not built: automated tests for the configuration errors in R6 and R7. Issue #3 asks for one smoke test, so U3 checks these failures by hand. Add tests if a later change to settings breaks them unnoticed.
 - Not built: a root URL or any view. There is nothing to show yet, and Django's default page is not worth testing.
 - Not built: split settings modules (`base`/`dev`/`prod`). Environment variables already cover the differences between environments.
+- Not built: email/mailer configuration. No `EMAIL_BACKEND` setting is added in this unit.
+- Not built: `DEFAULT_AUTO_FIELD`. `startproject`'s default (`'django.db.models.BigAutoField'`) is deferred rather than added now, pending a future discussion on adopting UUID primary keys instead.
 
 #### Deferred to Follow-Up Work
 
